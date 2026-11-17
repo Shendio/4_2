@@ -18,7 +18,7 @@ function saveData() {
 
 // lista kategorii
 app.get('/jokebook/categories', (req, res) => {
-  res.json(data.categories);
+    res.json({ categories: data.categories });
 });
 
 // losowy żart z kategorii
